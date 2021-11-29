@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        body{
+            background-color: white;
+            
+        }
+        h1{
+            color: black;
+        }
+        h2{
+            color: black;
+        }
+
+        button{
+            color: black;
+        }
+
+        div.teste{
+            
+
+        }
+        #a1{
+            width: 500px;
+            height: 100px;
+        }
+        div.dc1{
+            width: 500px;
+            height: 150px;
+            position: relative;
+            left: 450px;
+        }
+
+        #dc2{
+            border-left: 7px solid red;
+            ;
+            background-color: gray;
+            
+        }
+
+        #button{
+            background-color: gray;
+            width: 150px;
+            height: 50px;
+            color: black;
+            letter-spacing: 1px;
+            text-shadow: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="teste">
+        <h1>Bin2Dec</h1>
+        <h2>Binary to decimal code converter</h2>
+    </div>
+
+    <div class="converter">
+        <form action="/" method="post">
+            <div class="textarea">
+                <input type="text" name="bin" id="a1">
+            </div>
+            <div>
+                <button type="submit" id="button">convert</button>
+            </div>
+
+        </form>
+    </div>
+    {% block value %}
+    <div class="dc1">
+        <p id="dc2">
+            decimal number is: {{ value }}
+        </p>
+    </div>
+    {% endblock %}
+</body>
+</html>
